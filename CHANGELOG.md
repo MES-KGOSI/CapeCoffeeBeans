@@ -1,3 +1,21 @@
 # Changelog
 
+### 2025-08-27
+- Initialized project folder and GitHub repository
+- Added base HTML files: index.html, about.html, products.html, brewing.html, faqs.html, contact.html
+- Created initial folder structure: CapeCoffeeBeans, Social_Media, images folders
+- Navigation for all pages was created and spacing in between using html tags for Part 1
+
+- Added header to all pages with logo linking to home
+- Added navigation menu with links to all pages
+- Added main content sections with headings and paragraphs
+- Added footer to all pages
+
+- Added spacing between navigation links for readability
+- Added search input field to navigation
+- Added cart button link to navigation
+
+- Fixed broken link in About page
+- Corrected image paths for logo and product images
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
