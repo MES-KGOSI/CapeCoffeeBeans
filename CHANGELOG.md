@@ -20,8 +20,10 @@
 - Added background image (banner) and put text on top and button
 
 - Added my columns to my About page and the information that goes with it including the Barista image
+- Added my columns and images and links to my products pages
 
 - Completed my index.html Part 1
 - Completed my about.html Part 1
+- Completed my products.html Part 1
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
