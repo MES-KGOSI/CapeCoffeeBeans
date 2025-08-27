@@ -23,6 +23,7 @@
 - Added my columns and images and links to my products pages
 - Added page section at the bottom of products page
 - Added Links for products, information and placing orders on the brewing page
+- Added some adjustments to about, faqs, products, and brewing pages
 - Added my columns in the FAQs page
 
 - Completed my index.html Part 1
