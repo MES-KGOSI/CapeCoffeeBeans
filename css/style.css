@@ -1,0 +1,139 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* Heading, paragraph, and button inside the banner */
+.banner h1, 
+.banner p, 
+.banner .btn {
+    color: white;
+    z-index: 2;              /* ensures they sit above the banner image */
+}
+
+/* Copyright text at bottom-left corner */
+.banner .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    z-index: 2;
+}
+
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px; /* Adjust spacing */
+    position: absolute; /* Sit on top of hero image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3; /* Ensure nav is above hero overlay */
+    background: transparent; /* No background color */
+}
+
+/* Push main content below nav */
+main {
+    margin-top: 100px; /* Adjust this to match nav height + padding */
+}
+/* Nav links styling */
+nav a {
+    color: #ffffff; /* So links are visible over image */
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* Nav link color for all inner pages */
+body.inner-page nav a {
+    color: #333333;
+}
+
+
+/* Logo styling */
+nav .logo img {
+    height: 50px;
+}
+
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Make hero image fill entire screen */
+.hero {
+    background-image: url('../images/CoffeeMug.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* makes the image stay in place */
+    height: 100vh;
+    width: 100%;
+    position: relative; /* allows absolute children positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero .copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Add a subtle overlay so text is readable */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Hero text on top of overlay */
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2; /* Make text appear above overlay */
+}
+
+/* button styling */
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0c14b;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
