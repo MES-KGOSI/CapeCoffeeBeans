@@ -1,8 +1,18 @@
 /* Reset */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Static index page */
+body.home-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+     font-family: Arial, sans-serif;
+}
 
+/* All non-home pages scroll vertically only */
+body:not(.home-page) {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto;   /* Allow vertical scrolling */
+    font-family: Arial, sans-serif;
 }
 
 
