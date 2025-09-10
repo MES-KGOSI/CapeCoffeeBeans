@@ -38,5 +38,6 @@
 
 - Adding stylesheet to the project Part 2
 - Added stylesheet to link all the pages to the style.css page
+- Changed the css folder name from style.css to css and cteated a style.css document inside the folder
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
