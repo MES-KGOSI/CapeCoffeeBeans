@@ -37,6 +37,6 @@
 ### 2025-09-10
 
 - Adding stylesheet to the project Part 2
-
+- Added stylesheet to link all the pages to the style.css page
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
