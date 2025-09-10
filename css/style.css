@@ -101,7 +101,7 @@ nav a:hover {
 }
 .hero .banner-content {
     position: absolute;
-    top: 50%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -137,13 +137,15 @@ nav a:hover {
 }
 
 /* button styling */
-.hero .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f0c14b;
-    color: #000;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
+/* Rounded button */
+button {
+    padding: 10px 40px;        /* Space inside button */
+    border-radius: 10px;       /* Rounds the corners */
+    border: none;              /* Optional: remove default border */
+    background-color: #ffffff; /* Button background */
+    cursor: pointer;           /* Makes it clickable */
+    font-size: 12pt;         /* <-- Change this value to adjust the font size */
+    font-weight: bold;        /* Optional: makes text bolder */
 }
+
 

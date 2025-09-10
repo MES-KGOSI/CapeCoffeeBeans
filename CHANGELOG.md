@@ -41,4 +41,6 @@
 - Changed the css folder name from style.css to css and cteated a style.css document inside the folder
 - Fixed the navigation colors in the css and updated my index.html code
 - Removed/hid overflow on index.html and added overflow scrolling up and down only for other pages
+- Positioning of button, the intro and styling the button on index.html
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
