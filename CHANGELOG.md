@@ -34,4 +34,9 @@
 - Completed my faqs.html Part 1
 - Complted my contact.html Part 1
 
+### 2025-09-10
+
+- Adding stylesheet to the project Part 2
+
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
