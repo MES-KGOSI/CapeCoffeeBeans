@@ -148,33 +148,108 @@ button {
     font-weight: bold;        /* Optional: makes text bolder */
 }
 
-/* Search form styling */
+/* NAVCONTAINER */
+nav { 
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* left | center | right */
+    align-items: center;
+    padding: 10px 0px;
+}
+
+
+/* Default nav link styling (for inner pages) */
+.nav-center a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333333;       /* black for all normal pages */
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.nav-center a:hover {
+    text-decoration: underline;
+}
+
+/* Home page only (no scroll, white nav links, static hero) */
+body.home-page {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body.home-page .nav-center a {
+  color: #fff; /* nav links white only on home */
+}
+
+/* LEFT SECTION (LOGO) */
+.nav-left {
+    justify-self: start;
+}
+
+/* CENTER SECTION (LINKS) */
+.nav-center {
+    justify-self: center;
+}
+
+/* Right section container */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;        /* space between search + cart */
+    justify-self: end;
+    min-width: max-content;  /* ensures the column is wide enough for its content */
+        margin-left: 20px;     /* space from the center links */
+}
+
+
+/* Search box container */
 .search-form {
+    position: relative;         /* needed for absolute icon */
     display: flex;
     align-items: center;
     border: 2px solid #ccc;
-    border-radius: 25px;   /* makes left + right rounded */
-    overflow: hidden;      /* keeps button + input inside */
+    border-radius: 25px;        /* fully rounded corners */
+    overflow: hidden;           /* keeps input and button inside */
 }
 
+/* Search icon inside input */
+.search-form .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14pt;
+    color: #555;
+    pointer-events: none;       /* icon won’t block typing */
+}
+
+/* Input field */
 .search-form input {
     border: none;
     outline: none;
-    padding: 10px;
-    flex: 1;               /* input takes full width */
-    text-align: center;    /* center-align text */
+    padding: 10px 15px 10px 40px; /* left padding for the icon */
+    flex: 1;                       /* take up remaining width */
     font-size: 12pt;
+    text-align: center;             /* center text */
 }
 
+/* Button directly attached to input */
 .search-form button {
-    background-color: #f0c14b;
+    background-color: #ffffff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     cursor: pointer;
     font-size: 12pt;
+    border-left: 1px solid #ccc; /* subtle separation line */
 }
 
-/* Cart button styling */
+/* Optional: hover effect */
+.search-form button:hover {
+    background-color: #e6b93b;
+}
+
+
+
+/* Cart button */
 .cart-btn {
     display: inline-flex;
     align-items: center;
@@ -184,7 +259,9 @@ button {
     text-decoration: none;
     background: #fff;
     font-size: 12pt;
-    color: #000;
+    color: #333333;
+    white-space: nowrap;  /* prevent text wrapping */
+    flex-shrink: 0;       /* don’t let it shrink */
 }
 
 .cart-btn:hover {
@@ -196,6 +273,7 @@ button {
     font-weight: bold;
     color: #333;
 }
+
 
 
 

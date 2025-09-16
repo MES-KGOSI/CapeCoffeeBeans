@@ -46,6 +46,7 @@
 ### 2025-09-16
 
 - Added Search box and cart to the style.css and removed html spacing to style in the style sheet
+- Fixing the navigation spacing more
 
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
