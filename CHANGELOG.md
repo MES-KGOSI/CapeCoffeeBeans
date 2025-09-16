@@ -47,7 +47,9 @@
 
 - Added Search box and cart to the style.css and removed html spacing to style in the style sheet
 - Fixing the navigation spacing more
-- The navigation styling is complete and icons are added in the search and cart section(s) using the Bootstrap icons
+- The navigation styling is complete and icons are added in the search and cart section(s) using the Bootstrap icons link
 
+
+- css on the index.html is complete
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
