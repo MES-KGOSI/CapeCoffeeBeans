@@ -43,4 +43,9 @@
 - Removed/hid overflow on index.html and added overflow scrolling up and down only for other pages
 - Positioning of button, the intro and styling the button on index.html
 
+### 2025-09-16
+
+- Added Search box and cart to the style.css and removed html spacing to style in the style sheet
+
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*

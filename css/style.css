@@ -101,7 +101,7 @@ nav a:hover {
 }
 .hero .banner-content {
     position: absolute;
-    top: 28%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -147,5 +147,55 @@ button {
     font-size: 12pt;         /* <-- Change this value to adjust the font size */
     font-weight: bold;        /* Optional: makes text bolder */
 }
+
+/* Search form styling */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;   /* makes left + right rounded */
+    overflow: hidden;      /* keeps button + input inside */
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;               /* input takes full width */
+    text-align: center;    /* center-align text */
+    font-size: 12pt;
+}
+
+.search-form button {
+    background-color: #f0c14b;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+/* Cart button styling */
+.cart-btn {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    padding: 8px 15px;
+    text-decoration: none;
+    background: #fff;
+    font-size: 12pt;
+    color: #000;
+}
+
+.cart-btn:hover {
+    background: #f0f0f0;
+}
+
+.cart-count {
+    margin-left: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
 
 
