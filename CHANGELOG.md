@@ -49,7 +49,9 @@
 - Fixing the navigation spacing more
 - The navigation styling is complete and icons are added in the search and cart section(s) using the Bootstrap icons link
 - Added styling to the side navgation list of the brewing page, added styling to the pagination, also the heading links of the brewing page. Linked the side navigation list to its page (some are non existent for now) only the Coffee by brew methods exists
+- Linked for pagination and side navigation to the brewing.html until further notice 
 
 - css on the index.html is complete
+- css on the brewing.html is complete
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
