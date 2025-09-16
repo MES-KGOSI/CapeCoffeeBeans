@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset index page, navigation and other sections */
 /* Static index page */
 body.home-page {
     margin: 0;
@@ -328,5 +328,168 @@ body.home-page .cart-btn:hover {
     color: #333333;            /* cart icon color on hover */
 }
 
+/*other page css*/
+
+/* INNER PAGE STYLING ( About, Products, etc...) */
+body.inner-page {
+    overflow-y: auto;       /* allow vertical scrolling */
+    font-family: Arial, sans-serif;
+    color: #333333;         /* default text color */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* About page main heading */
+body.inner-page main h1 {
+    text-align: center;     /* center heading */
+    color: #333333;
+    font-size: 24pt;
+    margin-bottom: 30px;
+}
+
+/* Inner section styling */
+body.inner-page main div {
+    margin-bottom: 20px;
+}
+
+/* Headings inside columns */
+body.inner-page main h2 {
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs inside columns */
+body.inner-page main p {
+    font-size: 12pt;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Column layout for inner page sections */
+body.inner-page main > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Each column */
+body.inner-page main > div > div {
+    flex: 1 1 30%; /* grow, shrink, base width */
+}
+
+/* Image styling */
+body.inner-page main img {
+    max-width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* center image */
+}
+
+/* Footer styling for inner pages */
+body.inner-page footer, 
+body.inner-page > p {
+    font-size: 10pt;
+    color: #333333;
+    margin-top: 40px;
+}
+
+/* Brewing page number sections*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 6px; /* small spacing between elements */
+    list-style: none;
+    padding: 0;
+}
+
+.pagination a, .pagination span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; /* fixed width for buttons */
+    height: 32px; /* fixed height for buttons */
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+
+.pagination a:hover {
+    background-color: #e6b93b;
+    color: #fff;
+    border-color: #e6b93b;
+}
+
+.pagination .active, .pagination a.active {
+    border-color: #333;
+    color: #333;
+    background-color: #fff;
+}
+
+/* For Previous/Next add a class for styling if needed */
+.pagination .prev, .pagination .next {
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    width: auto;
+    padding: 6px 16px;
+    font-size: 14px;
+    border: none;
+}
+
+.pagination .prev:hover, .pagination .next:hover {
+    background: #e6b93b;
+    color: #fff;
+}
+
+/*side navigation*/
+
+.left-navigation-list {
+    list-style: none;        /* remove bullets */
+    padding-left: 0;
+    margin: 0;
+}
+
+.left-navigation-list li {
+    margin-bottom: 18px;     /* space between items */
+}
+
+.left-navigation-list li a {
+    font-weight: bold;        /* look like headings */
+    font-size: 14pt;
+    color: #333333;           /* heading color */
+    text-decoration: none;    /* remove underline */
+    display: block;           /* makes whole line clickable */
+    cursor: pointer;
+    padding: 4px 0;           /* vertical spacing inside links */
+    transition: color 0.3s;
+}
+
+.left-navigation-list li a:hover,
+.left-navigation-list li a:focus {
+    color: #e6b93b;           /* highlight on hover/focus */
+    text-decoration: underline; /* subtle underline on hover */
+    outline: none;
+}
 
 
+/*Remove the underlines from the links columns*/
+
+td a {
+  text-decoration: none;
+  color: inherit;
+}
+
+td a:hover, td a:focus {
+  text-decoration: underline;
+}

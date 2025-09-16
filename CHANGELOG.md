@@ -48,7 +48,7 @@
 - Added Search box and cart to the style.css and removed html spacing to style in the style sheet
 - Fixing the navigation spacing more
 - The navigation styling is complete and icons are added in the search and cart section(s) using the Bootstrap icons link
-
+- Added styling to the side navgation list of the brewing page, added styling to the pagination, also the heading links of the brewing page. Linked the side navigation list to its page (some are non existent for now) only the Coffee by brew methods exists
 
 - css on the index.html is complete
 
