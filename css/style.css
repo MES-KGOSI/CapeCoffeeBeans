@@ -222,25 +222,34 @@ body.home-page .nav-center a {
     pointer-events: none;       /* icon won’t block typing */
 }
 
-/* Input field */
+/* Search input - only left corners rounded */
 .search-form input {
     border: none;
     outline: none;
-    padding: 10px 15px 10px 40px; /* left padding for the icon */
-    flex: 1;                       /* take up remaining width */
+    padding: 10px 15px;
+    flex: 1;
+    text-align: center;
     font-size: 12pt;
-    text-align: center;             /* center text */
+    border-top-left-radius: 25px;    /* rounded top-left */
+    border-bottom-left-radius: 25px; /* rounded bottom-left */
+    border-top-right-radius: 0;      /* no rounding on right */
+    border-bottom-right-radius: 0;   /* no rounding on right */
 }
 
-/* Button directly attached to input */
+/* Search button - only right corners rounded */
 .search-form button {
     background-color: #ffffff;
+     color: #333333;  /* change icon color */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 12pt;
-    border-left: 1px solid #ccc; /* subtle separation line */
+    border-top-right-radius: 25px;      /* rounded top-right */
+    border-bottom-right-radius: 25px;   /* rounded bottom-right */
+    border-top-left-radius: 0;          /* no rounding on left */
+    border-bottom-left-radius: 0;       /* no rounding on left */
 }
+
 
 /* Optional: hover effect */
 .search-form button:hover {
@@ -257,7 +266,7 @@ body.home-page .nav-center a {
     border-radius: 25px;
     padding: 8px 15px;
     text-decoration: none;
-    background: #fff;
+    background: #ffffff;
     font-size: 12pt;
     color: #333333;
     white-space: nowrap;  /* prevent text wrapping */
@@ -274,6 +283,50 @@ body.home-page .nav-center a {
     color: #333;
 }
 
+/* Only for inner pages */
+body.inner-page {
+
+}
+
+/* Search box background for inner pages */
+body.inner-page .search-form {
+    background-color: #333333; /* dark gray background */
+}
+
+/* Input text inside search box */
+body.inner-page .search-form input {
+   background-color: #333333;
+    color: #ffffff;            /* white text for contrast */
+}
+
+/* Search button background and icon color */
+body.inner-page .search-form button {
+    background-color: #333333; /* same dark gray */
+    color: #ffffff;            /* icon color */
+}
+
+/* Cart button background and text/icon color */
+body.inner-page .cart-btn {
+    background-color: #333333; /* dark gray background */
+    color: #ffffff;            /* cart icon and number color */
+}
+
+/* Make the cart number white */
+body.inner-page .cart-btn .cart-count {
+    color: #ffffff;           /* number inside cart */
+    font-weight: bold;
+}
+
+/*hover effect for inner pages */
+body.inner-page .search-form button:hover,
+body.inner-page .cart-btn:hover {
+    background-color: #e6b93b;/* slightly lighter on hover */
+}
+/*hover effect for home page */
+body.home-page .cart-btn:hover {
+    background-color: #e6b93b; /* subtle yellow hover */
+    color: #333333;            /* cart icon color on hover */
+}
 
 
 

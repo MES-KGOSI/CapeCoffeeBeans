@@ -7,6 +7,10 @@
 
     <!-- Link to stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
     </head>
     <body class="inner-page">
         <!-- This is my Navigation for Brewing and Logo -->
@@ -30,14 +34,18 @@
   <div class="nav-right">
     <!-- Search form -->
     <form action="search.html" method="get" class="search-form">
-      <input type="text" name="q" placeholder="Product search">
-      <button type="submit">🔍</button>
-    </form>
+    <input type="text" name="q" placeholder="Product search">
+    <button type="submit">
+        <i class="bi bi-search"></i>  <!-- This is the search icon -->
+    </button>
+</form>
 
     <!-- Cart button -->
     <a href="cart.html" class="cart-btn">
-      🛒 <span class="cart-count">0</span>
-    </a>
+    <i class="bi bi-cart"></i>  <!-- Bootstrap cart icon -->
+    <span class="cart-count">0</span>
+</a>
+
   </div>
 </nav>
 
