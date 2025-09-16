@@ -493,3 +493,123 @@ td a {
 td a:hover, td a:focus {
   text-decoration: underline;
 }
+
+/*image sizing*/
+
+.page-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Product styling */
+.product {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.product .caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.85), transparent);
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  pointer-events: none; /* Allow clicks to go through caption */
+}
+
+.product:hover .caption,
+.product:focus .caption {
+  text-decoration: underline;
+}
+
+/* Cart section styling */
+.cart-section {
+  grid-column: 4 / 5; /* occupies the 4th column */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+.cart-image-placeholder {
+  width: 100%;
+  height: 180px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.btn-add-cart,
+.btn-add-list,
+.btn-sign-up {
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-add-list {
+  background-color: #8b6a38;
+}
+
+.btn-add-cart:hover,
+.btn-add-list:hover,
+.btn-sign-up:hover {
+  background-color: #e6b93b;
+  color: #000;
+}
+
+/* Payment and newsletter headings */
+.payment-info h3,
+.newsletter-signup h3 {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.newsletter-signup input[type="email"] {
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 900px) {
+  .page-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .cart-section {
+    grid-column: 1 / 2;
+  }
+}
