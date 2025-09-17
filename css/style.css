@@ -640,3 +640,23 @@ td a:hover, td a:focus {
   width: 40px;
   height: 40px;
 }
+
+
+/*Send button form section*/
+
+.styled-button {
+  padding: 10px 30px;
+  margin-bottom: 20px; /* adjust value as needed */
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #333333;  /* Blue background */
+  color: white;                /* White text */
+  border: none;                /* No border */
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #e6b93b;  /* Darker blue on hover */
+}

@@ -34,7 +34,7 @@
 - Completed my faqs.html Part 1
 - Complted my contact.html Part 1
 
-### 2025-09-10
+### 2025-09-10 (css)
 
 - Adding stylesheet to the project Part 2
 - Added stylesheet to link all the pages to the style.css page
@@ -43,7 +43,7 @@
 - Removed/hid overflow on index.html and added overflow scrolling up and down only for other pages
 - Positioning of button, the intro and styling the button on index.html
 
-### 2025-09-16
+### 2025-09-16 (css)
 
 - Added Search box and cart to the style.css and removed html spacing to style in the style sheet
 - Fixing the navigation spacing more
@@ -55,10 +55,11 @@
 - css on the index.html is complete
 - css on the brewing.html is complete
 
-### 2025-09-17
+### 2025-09-17 (css)
 
 - Added maps rounded corners, styling for social media icons and spacing
 - Layed othe Products page images using columns and css
+- Added a button in the contact page and styled it in the css
 
 - css on the contact.html is complete
 
