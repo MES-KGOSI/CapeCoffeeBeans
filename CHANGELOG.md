@@ -60,7 +60,10 @@
 - Added maps rounded corners, styling for social media icons and spacing
 - Layed othe Products page images using columns and css
 - Added a button in the contact page and styled it in the css
+- Added product images in the products.html pages
 
 - css on the contact.html is complete
+- css on the faqs.html is complete
+- css on the about.html is complete
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
