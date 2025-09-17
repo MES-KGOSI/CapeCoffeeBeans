@@ -496,27 +496,37 @@ td a:hover, td a:focus {
 
 /*image sizing*/
 
-.page-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+.container {
+  display: flex;
   gap: 20px;
   padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
-/* Product styling */
-.product {
+/* Products area with 3 columns */
+.products-column {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* Each product box takes roughly 1/3 width minus gap */
+.products-column .product {
+  width: calc(33.33% - 13.33px); /* roughly 1/3 minus gap */
   position: relative;
-  overflow: hidden;
+
   border-radius: 12px;
-  display: block;
+  overflow: hidden;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
+
+
 }
 
-.product img {
+/* Images inside product */
+.products-column .product img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -524,17 +534,19 @@ td a:hover, td a:focus {
   display: block;
 }
 
-.product .caption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px 0;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.85), transparent);
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  text-decoration: none;
-  pointer-events: none; /* Allow clicks to go through caption */
+
+/* Cart column */
+.cart-column {
+  flex: 1;
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+ gap: 15px;
+  /* Limit width to keep consistent */
+  max-width: 25%;              /* to ensure it doesn't grow too wide */
 }
 
 .product:hover .caption,
@@ -542,19 +554,19 @@ td a:hover, td a:focus {
   text-decoration: underline;
 }
 
-/* Cart section styling */
+/* Cart styling */
 .cart-section {
-  grid-column: 4 / 5; /* occupies the 4th column */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    
   background: #f8f8f8;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
+/* Cart image placeholder */
 .cart-image-placeholder {
   width: 100%;
   height: 180px;
@@ -562,6 +574,7 @@ td a:hover, td a:focus {
   border-radius: 10px;
   margin-bottom: 8px;
 }
+
 
 .btn-add-cart,
 .btn-add-list,
@@ -584,7 +597,7 @@ td a:hover, td a:focus {
 .btn-add-list:hover,
 .btn-sign-up:hover {
   background-color: #e6b93b;
-  color: #000;
+  color: #fff;
 }
 
 /* Payment and newsletter headings */
@@ -612,4 +625,18 @@ td a:hover, td a:focus {
   .cart-section {
     grid-column: 1 / 2;
   }
+}
+
+/* Social icons*/
+
+.social-icons {
+  display: flex;       /* Arrange children in a horizontal row */
+  gap: 55px;           /* Space of 15px between each icon */
+  align-items: center; /* Vertically center icons if different heights */
+}
+
+.social-icons a img {
+  display: block;      /* Remove any bottom space */
+  width: 40px;
+  height: 40px;
 }

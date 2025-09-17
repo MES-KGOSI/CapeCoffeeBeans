@@ -55,4 +55,11 @@
 - css on the index.html is complete
 - css on the brewing.html is complete
 
+### 2025-09-17
+
+- Added maps rounded corners, styling for social media icons and spacing
+- Layed othe Products page images using columns and css
+
+- css on the contact.html is complete
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
