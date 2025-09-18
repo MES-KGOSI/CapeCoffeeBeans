@@ -70,4 +70,6 @@
 
 - Added gradient to the caption links and and positioned the caption links on the bottom center aligned of the images referencing my look and feel/ wireframes 
 
+- css on the products.html is complete
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
