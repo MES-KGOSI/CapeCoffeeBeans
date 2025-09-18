@@ -679,3 +679,68 @@ td a:hover, td a:focus {
 .styled-button:hover {
   background-color: #e6b93b;  /* Darker blue on hover */
 }
+
+
+
+/* For responsiveness from desktop to mobile or tablet*/
+
+/* Responsive Styling            */
+
+/* Tablet */
+@media (max-width: 900px) {
+  /* Products stack into 2 per row */
+  .products-column .product {
+    width: calc(50% - 10px);
+  }
+
+  /* Cart moves below products */
+  .container {
+    flex-direction: column;
+  }
+  .cart-column {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Navigation adjusts */
+  nav {
+    padding: 10px 20px;
+  }
+  .nav-center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  /* Products go full width */
+  .products-column .product {
+    width: 100%;
+  }
+
+  /* Nav stacks vertically */
+  nav {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .nav-left,
+  .nav-center,
+  .nav-right {
+    justify-self: center;
+    margin: 10px 0;
+  }
+
+  /* Paragraph text size adjusts */
+  body.inner-page main p {
+    font-size: 11pt;
+  }
+
+  /* Images remain same aspect ratio */
+  .products-column .product img,
+  .cart-image-placeholder {
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+  }
+}
