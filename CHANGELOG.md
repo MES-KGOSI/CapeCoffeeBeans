@@ -66,4 +66,8 @@
 - css on the faqs.html is complete
 - css on the about.html is complete
 
+### 2025-09-18 (css)
+
+- Added gradient to the caption links and and positioned the caption links on the bottom center aligned of the images referencing my look and feel/ wireframes 
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
