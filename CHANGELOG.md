@@ -84,7 +84,7 @@
 - Added functionality to the address to take the user to the maps directions
 - Added js to phone number and css styling
 
-- Added styling, js and localhost for sending emails to the user for confirmation on contact form
+- Added styling, js and localhost for sending emails
 - Added the enquiry.html form
 - styled it and created its functionality
 - Update the error handling on the contact page
