@@ -756,3 +756,16 @@ td a:hover, td a:focus {
 .phoneLink:active {
     text-decoration: underline; /* underline on hover or click */
 }
+
+/* Get directions*/
+
+.mapLink {
+    color: #333333;
+    text-decoration: none; /* default: no underline */
+    font-weight: bold;
+}
+
+.mapLink:hover,
+.mapLink:active {
+    text-decoration: underline; /* underline on hover or click */
+}

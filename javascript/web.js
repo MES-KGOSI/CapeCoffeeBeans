@@ -12,5 +12,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+ // Get diections
+document.addEventListener('DOMContentLoaded', function() {
+    const mapLinks = document.querySelectorAll('.mapLink');
+
+    mapLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            const userConfirmed = confirm("Would you like to open directions?");
+            if (!userConfirmed) {
+                event.preventDefault(); // stop opening the link if No
+            }
+        });
+    });
+});
 
 
