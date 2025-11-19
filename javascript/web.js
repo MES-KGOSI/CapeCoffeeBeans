@@ -37,30 +37,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // prevent actual submission
 
-        const name = form.name.value.trim();
-        const email = form.email.value.trim();
-        const message = form.message.value.trim();
-
-        // Validate required fields
-        if (!name || !email || !message) {
-            alert("Please fill in all required fields (Name, Email, Message).");
-            return;
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+ // Check required fields
+        if (name === "" || email === "" || message === "") {
+            alert("Oops! Some required fields are missing. Please complete Name, Email, and Message.");
+            return; // STOP here — success popup will NOT appear
         }
 
-        // Ask user for confirmation
-        const confirmed = confirm("Would you like to send your message?");
-        if (!confirmed) return;
+        // Email validation
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return; // STOP here — success popup will NOT appear
+        }
 
-        // Submit the form
-        form.submit();
+        // Confirmation
+        const confirmed = confirm("Do you want to submit your message?");
+        if (!confirmed) return; // STOP here — success popup will NOT appear
 
-        // Show popup after submission
-        alert("Thank you, " + name + "! Your message has been received. We will contact you at " + email + ".");
+        // Success popup ONLY runs if none of the above returned
+        alert(`Thank you, ${name}! Your message has been received. We will contact you at ${email}.`);
+
+
+        form.reset(); // clear form after successful submission
+
     });
 });
-
-
-
 

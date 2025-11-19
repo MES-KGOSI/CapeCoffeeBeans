@@ -772,7 +772,7 @@ td a:hover, td a:focus {
     text-decoration: underline; /* underline on hover or click */
 }
 
-/* Form styling*/
+/* CONTACT Form styling*/
 
 /* Form input styling */
 input, textarea {
@@ -799,4 +799,94 @@ input, textarea {
 .styled-button:hover {
     background-color: #e6b93b; /* Yellow hover */
     color: #333333;            /* Dark text for contrast */
+}
+
+/* ENQUIRY PAGE*/
+
+/* Enquiry Section Styling */
+.enquiry-section {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.enquiry-section h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+/* Form Fields */
+.enquiry-section form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.enquiry-section form input,
+.enquiry-section form select,
+.enquiry-section form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* Buttons Row */
+.button-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;                   /* Space between buttons */
+    margin-top: 10px;
+}
+
+/* Styled Buttons */
+.styled-button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #e6b93b; /* Yellow hover */
+    color: #333333;
+}
+
+/* Success/Error Messages */
+.success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .button-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button-row button {
+        width: 100%;
+    }
 }

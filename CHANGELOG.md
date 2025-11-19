@@ -85,6 +85,9 @@
 - Added js to phone number and css styling
 
 - Added styling, js and localhost for sending emails to the user for confirmation on contact form
+- Added the enquiry.html form
+- styled it and created its functionality
+- Update the error handling on the contact page
 
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*

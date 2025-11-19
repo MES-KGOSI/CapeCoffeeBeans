@@ -71,7 +71,7 @@
                            
                             
 
-                    <form id="contactForm" action="https://formsubmit.co/ST10468214@rcconnect.edu.za" method="POST">
+                    <form id="contactForm">
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name" required><br><br>
 
@@ -88,7 +88,10 @@
     <input type="hidden" name="_next" value="thankyou.html">
     <input type="hidden" name="_captcha" value="false">
 
+    <div class="button-row">
     <button type="submit" class="styled-button">Send</button>
+    <button type="button" class="styled-button" id="enquiryButton">Enquiry</button>
+</div>
 </form>
                     <!-- Bottom info after form -->
                     <strong>Support hours are:
@@ -183,6 +186,18 @@ online or contact us before visiting.</p>
         </footer>
 
 <!-- Link external JavaScript file -->
+ <!-- JavaScript for Enquiry button -->
+<script>
+    // Redirect Enquiry button to Enquiry page
+const enquiryButton = document.getElementById('enquiryButton');
+if (enquiryButton) {
+    enquiryButton.addEventListener('click', function() {
+        window.location.href = 'enquiry.html';
+    });
+}
+
+
+</script>
 <script src="javascript/web.js"></script>
     </body>
 </html>

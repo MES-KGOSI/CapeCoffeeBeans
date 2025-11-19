@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title | Cape Coffee Beans</title>
+
+    <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Inline CSS for Enquiry page button -->
+    <style>
+        /* Button row for enquiry page */
+        .enquiry-section .button-row {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            margin-top: 20px;
+        }
+
+        /* Enquiry page Send button */
+        .enquiry-section .styled-button {
+            width: 300px;          /* Wider horizontally */
+            max-width: 90%;        /* Responsive */
+            padding: 15px 0;       /* Taller button */
+            font-size: 1.2rem;     /* Larger text */
+            border-radius: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .enquiry-section .styled-button:hover {
+            background-color: #e6b93b; /* Yellow hover */
+            color: #333333;
+        }
+    </style>
+
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    </head>
+    <body class="inner-page">
+        <!-- This is my Navigation for Brewing and Logo -->
+        <header>
+            <nav>
+  <div class="nav-left">
+    <a href="index.html" class="logo">
+      <img src="images/CCB_Logo.png" alt="Cape Coffee Beans Logo" height="50">
+    </a>
+  </div>
+
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="brewing.html">Brewing</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="nav-right">
+    <!-- Search form -->
+    <form action="search.html" method="get" class="search-form">
+    <input type="text" name="q" placeholder="Product search">
+    <button type="submit">
+        <i class="bi bi-search"></i>  <!-- This is the search icon -->
+    </button>
+</form>
+
+    <!-- Cart button -->
+    <a href="cart.html" class="cart-btn">
+    <i class="bi bi-cart"></i>  <!-- Bootstrap cart icon -->
+    <span class="cart-count">0</span>
+</a>
+
+  </div>
+</nav>
+
+<main>
+    <section class="enquiry-section">
+        <h1>Make an Enquiry</h1>
+
+        <form id="enquiryForm">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0123456789" required>
+
+            <label for="enquiryType">Type of Enquiry *</label>
+            <select id="enquiryType" name="enquiryType" required>
+                <option value="">--Please choose an option--</option>
+                <option value="services">Services</option>
+                <option value="products">Products</option>
+                <option value="volunteering">Volunteering</option>
+                <option value="sponsorship">Sponsorship</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div class="button-row">
+    <button type="submit" class="styled-button">Send</button>
+</div>
+
+
+            <p id="formMessage" class="success"></p>
+        </form>
+    </section>
+</main>
+
+<!-- Include JavaScript at the end of body -->
+<script src="javascript/web.js"></script>
+</body>
+</html>
