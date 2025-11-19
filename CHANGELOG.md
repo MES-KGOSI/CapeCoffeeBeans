@@ -88,6 +88,7 @@
 - Added the enquiry.html form
 - styled it and created its functionality
 - Update the error handling on the contact page
+- Added js and error handling to enquiry form
 
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*

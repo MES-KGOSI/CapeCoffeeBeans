@@ -115,6 +115,53 @@
 </main>
 
 <!-- Include JavaScript at the end of body -->
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('enquiryForm');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Stop actual submission
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const enquiryType = document.getElementById('enquiryType').value;
+        const message = document.getElementById('message').value.trim();
+
+        // Check required fields
+        if (!name || !email || !phone || !enquiryType || !message) {
+            alert("Oops! Some required fields are missing. Please complete all fields marked with *.");
+            return; // Stop execution if any field is empty
+        }
+
+        // Email validation
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Phone validation (10 digits)
+        const phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            alert("Please enter a valid 10-digit phone number.");
+            return;
+        }
+
+        // Confirmation
+        const confirmed = confirm("Do you want to submit your enquiry?");
+        if (!confirmed) return; // Stop if user cancels
+
+        // Success popup
+        alert(`Thank you, ${name}! Your enquiry has been received. We will contact you at ${email}.`);
+
+        form.reset(); // Clear form after successful submission
+    });
+});
+
+</script>
 <script src="javascript/web.js"></script>
 </body>
 </html>
