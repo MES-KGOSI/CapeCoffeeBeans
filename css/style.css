@@ -141,12 +141,20 @@ nav a:hover {
 button {
     padding: 10px 40px;        /* Space inside button */
     border-radius: 10px;       /* Rounds the corners */
-    border: none;              /* Optional: remove default border */
+    border: none;              /* Remove default border */
     background-color: #ffffff; /* Button background */
     cursor: pointer;           /* Makes it clickable */
-    font-size: 12pt;         /* <-- Change this value to adjust the font size */
-    font-weight: bold;        /* Optional: makes text bolder */
+    font-size: 12pt;           /* Font size */
+    font-weight: bold;         /* Makes text bolder */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 }
+
+/* Hover effect */
+button:hover {
+    background-color: #e6b93b; /* Yellow hover background */
+    color: #333333;            /* Dark text on hover */
+}
+
 
 /* NAVCONTAINER */
 nav { 
