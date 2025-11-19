@@ -790,16 +790,13 @@ input, textarea {
     color: white;
     border: none;
     cursor: pointer;
+    outline: none;           /* Remove default outline */
+    -webkit-appearance: none; /* Remove default browser button style */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
+/* Hover effect */
 .styled-button:hover {
-    background-color: #555;
+    background-color: #e6b93b; /* Yellow hover */
+    color: #333333;            /* Dark text for contrast */
 }
-
-/* Confirmation message */
-#confirmation {
-    color: green;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
