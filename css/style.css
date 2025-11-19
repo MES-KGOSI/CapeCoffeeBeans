@@ -745,6 +745,8 @@ td a:hover, td a:focus {
   }
 }
 
+
+/* CONTACT PAGE ONLY*/
 /* CONTACT PAGE: phone number color and hovering for clickability and activation*/
 
 .phoneLink {
@@ -769,3 +771,35 @@ td a:hover, td a:focus {
 .mapLink:active {
     text-decoration: underline; /* underline on hover or click */
 }
+
+/* Form styling*/
+
+/* Form input styling */
+input, textarea {
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Styled button */
+.styled-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.styled-button:hover {
+    background-color: #555;
+}
+
+/* Confirmation message */
+#confirmation {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+

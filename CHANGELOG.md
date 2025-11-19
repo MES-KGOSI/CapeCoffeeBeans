@@ -84,5 +84,7 @@
 - Added functionality to the address to take the user to the maps directions
 - Added js to phone number and css styling
 
+- Added styling, js and localhost for sending emails to the user for confirmation on contact form
+
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*

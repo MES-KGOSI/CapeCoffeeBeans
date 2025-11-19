@@ -71,25 +71,24 @@
                            
                             
 
-                    <form action="#" method="post">
+                    <form id="contactForm" action="https://formsubmit.co/ST10468214@rcconnect.edu.za" method="POST">
     <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required 
-           style="width: 85%; padding: 10px; border-radius: 10px; box-sizing: border-box;"><br><br>
+    <input type="text" id="name" name="name" required><br><br>
 
     <label for="email">Email address:</label><br>
-    <input type="email" id="email" name="email" required
-           style="width: 85%; padding: 10px; border-radius: 10px; box-sizing: border-box;"><br><br>
+    <input type="email" id="email" name="email" required><br><br>
 
     <label for="phone">Phone number:</label><br>
-    <input type="tel" id="phone" name="phone" 
-           style="width: 85%; padding: 10px; border-radius: 10px; box-sizing: border-box;"><br><br>
+    <input type="tel" id="phone" name="phone"><br><br>
 
     <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" required
-              style="width: 85%; padding: 10px; border-radius: 10px; box-sizing: border-box;"></textarea><br><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-   <button type="send" class="styled-button">Send</button>
+    <!-- Optional: redirect page after submission -->
+    <input type="hidden" name="_next" value="thankyou.html">
+    <input type="hidden" name="_captcha" value="false">
 
+    <button type="submit" class="styled-button">Send</button>
 </form>
                     <!-- Bottom info after form -->
                     <strong>Support hours are:
