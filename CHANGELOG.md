@@ -79,4 +79,7 @@
 ### 2025-11-19 (javascript)
 
 - Added javascript folder
+- Updated the icons in the contact.html page by directing the user to specified social media links for Cape Coffee Beans e.g. IG icon takes the user to the Cape Coffee Beans IG page
+
+
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
