@@ -92,4 +92,5 @@
 - Added a universal search from anywhere on the website directing to product.html page
 - Added hovering to learn more about us here
 
+- The end
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*
