@@ -62,9 +62,43 @@ document.addEventListener('DOMContentLoaded', function() {
         // Success popup ONLY runs if none of the above returned
         alert(`Thank you, ${name}! Your message has been received. We will contact you at ${email}.`);
 
-
         form.reset(); // clear form after successful submission
 
     });
 });
 
+// products search
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('.search-form');
+    if (!searchForm) return;
+
+    const searchInput = searchForm.querySelector('input[name="q"]');
+    if (!searchInput) return;
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const query = searchInput.value.trim().toLowerCase(); // Normalize input
+
+        // Map search terms to pages
+        const pages = {
+            "index": "index.html",
+            "home": "index.html",
+            "products": "products.html",
+            "faqs": "faqs.html",
+            "enquiry": "enquiry.html",
+            "brewing": "brewing.html",
+            "about": "about.html",
+            "contact": "contact.html"
+        };
+
+        if (pages[query]) {
+            window.location.href = pages[query]; // Redirect to page
+        } else {
+            alert("No page found for your search. Try: Home, Products, FAQs, Enquiry, Brewing, About, or Contact.");
+        }
+
+        searchInput.value = ""; // Optional: clear search box
+    });
+});
