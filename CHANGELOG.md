@@ -82,5 +82,7 @@
 - Updated the icons in the contact.html page by directing the user to specified social media links for Cape Coffee Beans e.g. IG icon takes the user to the Cape Coffee Beans IG page
 - Linked my interactive google maps to the Cape Coffee Beans google maps real address in contact.html
 
+- Added js to phone number and css styling
+
 
 *Changelog created using the [Simple Changelog](https://marketplace.visualstudio.com/items?itemName=tobiaswaelde.vscode-simple-changelog) extension for VS Code.*

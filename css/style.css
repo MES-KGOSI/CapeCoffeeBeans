@@ -744,3 +744,15 @@ td a:hover, td a:focus {
     object-fit: cover;
   }
 }
+
+/* CONTACT PAGE: phone number color and hovering for clickability and activation*/
+
+.phoneLink {
+    color: #333333;
+    text-decoration: none; /* default: no underline */
+}
+
+.phoneLink:hover,
+.phoneLink:active {
+    text-decoration: underline; /* underline on hover or click */
+}
